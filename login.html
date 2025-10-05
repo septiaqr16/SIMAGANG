@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="container right-panel-active" id="container">
+    <!-- Sign Up Form -->
+    <div class="form-container sign-up">
+      <form>
+        <h1>Buat Akun Baru</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>Atau gunakan email Anda</span>
+        <input type="text" placeholder="Nama Lengkap" />
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Kata Sandi" />
+        <button>Daftar</button>
+      </form>
+    </div>
+
+    <!-- Sign In Form -->
+    <div class="form-container sign-in">
+      <form>
+        <h1>Masuk</h1>
+        <div class="social-icons">
+          <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <span>Atau gunakan akun Anda</span>
+        
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Kata Sandi" />
+        <a href="#">Lupa kata sandi?</a>
+        <button>Masuk</button>
+      </form>
+    </div>
+
+    <!-- Toggle Panel -->
+    <div class="toggle-container">
+      <div class="toggle">
+        <div class="toggle-panel toggle-left">
+          <h1>Selamat Datang Kembali!</h1>
+          <p>Masuk ke akun Anda untuk melanjutkan aktivitas magang</p>
+          <button class="hidden" id="login">Masuk</button>
+        </div>
+        <div class="toggle-panel toggle-right">
+          <h1>Si Magang</h1>
+          <p>Buat akun baru untuk mengelola kegiatan magang Anda</p>
+          <button class="hidden" id="register">Daftar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const container = document.getElementById('container');
+    const registerBtn = document.getElementById('register');
+    const loginBtn = document.getElementById('login');
+
+    registerBtn.addEventListener('click', () => {
+      container.classList.add('right-panel-active');
+    });
+
+    loginBtn.addEventListener('click', () => {
+      container.classList.remove('right-panel-active');
+    });
+  </script>
+</body>
+</html>
