@@ -1,0 +1,116 @@
+/* ====== AREA PROFIL ====== */
+.main-content {
+  margin-left: 250px; /* lebar sidebar */
+  padding: 0;
+  background-color: #f5f7fb;
+  min-height: 100vh;
+}
+.profile-section {
+  background: #fff;
+  margin: -60px auto 40px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  max-width: 900px;
+}
+
+.profile-header {
+  position: relative;
+  background: url("https://tse4.mm.bing.net/th/id/OIP.9wX7mzYDrQFH5LLP-Uhb1wHaDC?pid=Api&P=0&h=180")
+    center/cover;
+  height: 200px;
+  width: 85%;
+  max-width: 900px;
+  margin: 40px auto 0;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 1; /* cover tetap di bawah profil */
+}
+
+
+
+.upload-cover-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.profile-info-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  position: relative;
+  z-index: 3; /* pastikan di atas cover */
+  margin-top: 50px; /* geser sedikit ke bawah agar tidak tertutup */
+}
+
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  object-fit: cover;
+  margin-top: -60px; /* posisi tetap seperti tadi */
+  position: relative;
+  z-index: 5; /* supaya muncul di atas gambar besar */
+}
+
+.profile-details h2 {
+  margin: 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.profile-details p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.profile-details .location {
+  color: #888;
+  font-size: 14px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #666;
+}
+
+.info-value {
+  font-weight: 500;
+  color: #222;
+}
+
+.info-actions a {
+  color: #4270f4;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.info-actions a:hover {
+  text-decoration: underline;
+}
